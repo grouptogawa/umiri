@@ -1,0 +1,36 @@
+{
+  "name": "@togawa-group/umiri",
+  "type": "module",
+  "version": "1.0.0",
+  "description": "A simple, priority-based event bus with type safety.",
+  "main": "dist/index.cjs",
+  "module": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "import": "./dist/index.js",
+      "require": "./dist/index.cjs"
+    },
+    "./package.json": "./package.json"
+  },
+  "files": [
+    "dist",
+    "README.md",
+    "LICENSE"
+  ],
+  "author": "GroupTogawa",
+  "license": "MIT",
+  "publishConfig": {
+    "access": "public"
+  },
+  "devDependencies": {
+    "@types/node": "latest",
+    "eslint": ">=7.0.0",
+    "eslint-config-prettier": "^10.1.8",
+    "prettier": "3.6.2"
+  },
+  "peerDependencies": {
+    "typescript": "^5"
+  }
+}
