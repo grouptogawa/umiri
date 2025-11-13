@@ -1,5 +1,5 @@
 {
-    "name": "@togawa-group/umiri",
+    "name": "@grouptogawa/umiri",
     "type": "module",
     "version": "1.0.0",
     "description": "A lightweight, priority-based event bus with type-safe design for TypeScript.",
@@ -19,7 +19,7 @@
         "README.md",
         "LICENSE"
     ],
-    "author": "GroupTogawa",
+    "author": "grouptogawa, kyoku",
     "license": "MIT",
     "publishConfig": {
         "access": "public"
@@ -42,5 +42,12 @@
         "build": "tsup src/index.ts --format esm,cjs --dts --out-dir dist --sourcemap --clean",
         "prepublishOnly": "bun run build"
     },
-    "packageManager": "bun@1.3.1"
+    "packageManager": "bun@1.3.1",
+    "keywords": [
+		"eventbus",
+        "priority-based",
+        "typescript",
+        "lightweight",
+        "no-dependencies"
+	]
 }
